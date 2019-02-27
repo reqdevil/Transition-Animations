@@ -17,19 +17,22 @@ class SecondVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hero.isEnabled = true
-        self.hero.modalAnimationType = .slide(direction: .down)
+        view.layoutIfNeeded()
         
         committees = DataServices.instance.getCommitteesArray()
         
+        self.hero.isEnabled = true
+        self.hero.modalAnimationType = .slide(direction: .down)
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.reloadData()
         collectionView.scrollToItem(at: selectedIndex!, at: .centeredHorizontally, animated: false)
-        collectionView.isScrollEnabled = false
+//        collectionView.isScrollEnabled = false
     }
 }
 
-extension SecondVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension SecondVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return DataServices.instance.getCommitteesArray().count
     }
@@ -42,7 +45,6 @@ extension SecondVC: UICollectionViewDelegate, UICollectionViewDataSource {
             return cell
         }
         
-        print("Failed")
         return CommitteesCell()
     }
     
