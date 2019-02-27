@@ -1,11 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dD5-5D-RsM">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="Xzn-Ut-IgY">
+            <objects>
+                <viewController id="dD5-5D-RsM" customClass="FirstVC" customModule="Transition_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sjo-KZ-0rl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5T-B3-8Nz">
+                                <rect key="frame" x="275" y="678" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Dme-Sf-3Au"/>
+                                    <constraint firstAttribute="height" constant="50" id="mc6-v6-Xq4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="9"/>
+                                <state key="normal" title="Open Menu">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xha-9j-isW" firstAttribute="trailing" secondItem="B5T-B3-8Nz" secondAttribute="trailing" constant="50" id="7Qp-UD-78g"/>
+                            <constraint firstItem="xha-9j-isW" firstAttribute="bottom" secondItem="B5T-B3-8Nz" secondAttribute="bottom" constant="50" id="EXv-7n-t6L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xha-9j-isW"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewButton" destination="B5T-B3-8Nz" id="QU6-Y8-Woa"/>
+                        <segue destination="POR-rA-k3x" kind="show" identifier="toSecondVC" id="br6-60-Ybv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDd-Iq-MdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-577" y="-1"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="eL0-AX-p8g">
+            <objects>
+                <viewController id="POR-rA-k3x" customClass="SecondVC" customModule="Transition_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zcT-wi-xD9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AtC-9m-ei3">
+                                <rect key="frame" x="65" y="124" width="245" height="574"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QD8-nF-fQJ">
+                                    <size key="itemSize" width="113" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCell" id="Qb7-AY-smk" customClass="MenuCell" customModule="Transition_Animations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="113" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-eO-Byf">
+                                                    <rect key="frame" x="8" y="60" width="97" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="PFU-eO-Byf" secondAttribute="trailing" id="BrQ-AK-dRJ"/>
+                                            <constraint firstItem="PFU-eO-Byf" firstAttribute="leading" secondItem="Qb7-AY-smk" secondAttribute="leadingMargin" id="Wwg-L5-Ikx"/>
+                                            <constraint firstItem="PFU-eO-Byf" firstAttribute="centerY" secondItem="Qb7-AY-smk" secondAttribute="centerY" id="jDs-G8-1kf"/>
+                                            <constraint firstItem="PFU-eO-Byf" firstAttribute="centerX" secondItem="Qb7-AY-smk" secondAttribute="centerX" id="vZ2-Y5-9em"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="title" destination="PFU-eO-Byf" id="YcW-yU-TzU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIn-OX-uSR">
+                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EzZ-sP-Byo"/>
+                                    <constraint firstAttribute="width" constant="50" id="qRt-Q7-h4b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hero_dismissViewController" destination="uf0-8K-tTH" eventType="touchUpInside" id="SbW-C0-BQy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VIn-OX-uSR" firstAttribute="leading" secondItem="eI7-Lc-Rsp" secondAttribute="leading" constant="10" id="KFA-6E-Skp"/>
+                            <constraint firstItem="AtC-9m-ei3" firstAttribute="leading" secondItem="eI7-Lc-Rsp" secondAttribute="leading" constant="65" id="ScE-pP-pVB"/>
+                            <constraint firstItem="eI7-Lc-Rsp" firstAttribute="bottom" secondItem="AtC-9m-ei3" secondAttribute="bottom" constant="80" id="ZKb-mR-0in"/>
+                            <constraint firstItem="eI7-Lc-Rsp" firstAttribute="trailing" secondItem="AtC-9m-ei3" secondAttribute="trailing" constant="65" id="dVy-eg-cDA"/>
+                            <constraint firstItem="VIn-OX-uSR" firstAttribute="top" secondItem="eI7-Lc-Rsp" secondAttribute="top" constant="10" id="dkw-ng-Z1p"/>
+                            <constraint firstItem="AtC-9m-ei3" firstAttribute="top" secondItem="eI7-Lc-Rsp" secondAttribute="top" constant="80" id="tBi-0j-yYC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eI7-Lc-Rsp"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="AtC-9m-ei3" id="jrh-Yr-nWj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uf0-8K-tTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325.60000000000002" y="-1.4778325123152709"/>
+        </scene>
+    </scenes>
 </document>
