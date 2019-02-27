@@ -17,6 +17,7 @@
 		E6BE8F032225E9E30080F6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8F012225E9E30080F6E7 /* Main.storyboard */; };
 		E6BE8F052225E9E40080F6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8F042225E9E40080F6E7 /* Assets.xcassets */; };
 		E6BE8F082225E9E40080F6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8F062225E9E40080F6E7 /* LaunchScreen.storyboard */; };
+		E6FF71FC2227234C00138355 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF71FB2227234C00138355 /* ThirdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E6BE8F042225E9E40080F6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6BE8F072225E9E40080F6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6BE8F092225E9E40080F6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6FF71FB2227234C00138355 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				E6105BA122271857004F1452 /* FirstVC.swift */,
 				E6105BA322271860004F1452 /* SecondVC.swift */,
+				E6FF71FB2227234C00138355 /* ThirdVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				E6BE8EFE2225E9E30080F6E7 /* AppDelegate.swift in Sources */,
 				E6105BA422271860004F1452 /* SecondVC.swift in Sources */,
 				E6105BA622271874004F1452 /* MenuCell.swift in Sources */,
+				E6FF71FC2227234C00138355 /* ThirdVC.swift in Sources */,
 				E6105BAA2227188A004F1452 /* DataServices.swift in Sources */,
 				E6105BA222271857004F1452 /* FirstVC.swift in Sources */,
 				E6105BA822271881004F1452 /* Menu.swift in Sources */,

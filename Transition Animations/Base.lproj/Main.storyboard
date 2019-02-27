@@ -119,11 +119,60 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="AtC-9m-ei3" id="jrh-Yr-nWj"/>
+                        <segue destination="CeC-Db-fGU" kind="show" identifier="toThirdVC" id="san-hC-fgB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uf0-8K-tTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="-1.4778325123152709"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="fwk-qa-Das">
+            <objects>
+                <viewController id="CeC-Db-fGU" customClass="ThirdVC" customModule="Transition_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2VT-5V-2CK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exG-s6-zRj">
+                                <rect key="frame" x="20" y="388.66666666666669" width="335" height="35"/>
+                                <fontDescription key="fontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTz-cX-z4f">
+                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="LGU-Af-AUT"/>
+                                    <constraint firstAttribute="height" constant="50" id="wLZ-b5-wmb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hero_unwindToRootViewController" destination="hmb-X6-aXA" eventType="touchUpInside" id="PKT-ob-F3o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="exG-s6-zRj" firstAttribute="leading" secondItem="Fxn-vA-nGe" secondAttribute="leading" constant="20" id="YfR-w6-cUI"/>
+                            <constraint firstItem="mTz-cX-z4f" firstAttribute="leading" secondItem="Fxn-vA-nGe" secondAttribute="leading" constant="10" id="hDu-rp-U70"/>
+                            <constraint firstItem="exG-s6-zRj" firstAttribute="centerY" secondItem="2VT-5V-2CK" secondAttribute="centerY" id="keB-PO-Y5K"/>
+                            <constraint firstItem="exG-s6-zRj" firstAttribute="centerX" secondItem="2VT-5V-2CK" secondAttribute="centerX" id="lhC-VR-EtR"/>
+                            <constraint firstItem="Fxn-vA-nGe" firstAttribute="trailing" secondItem="exG-s6-zRj" secondAttribute="trailing" constant="20" id="n1L-vJ-j1n"/>
+                            <constraint firstItem="mTz-cX-z4f" firstAttribute="top" secondItem="Fxn-vA-nGe" secondAttribute="top" constant="10" id="wZQ-Ay-O2X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fxn-vA-nGe"/>
+                    </view>
+                    <connections>
+                        <outlet property="centerLabel" destination="exG-s6-zRj" id="JTR-Em-r9O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmb-X6-aXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="-1"/>
         </scene>
     </scenes>
 </document>
