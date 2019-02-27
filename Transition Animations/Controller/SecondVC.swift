@@ -28,7 +28,7 @@ class SecondVC: UIViewController {
         collectionView.dataSource = self
         collectionView.reloadData()
         collectionView.scrollToItem(at: selectedIndex!, at: .centeredHorizontally, animated: false)
-//        collectionView.isScrollEnabled = false
+        collectionView.isScrollEnabled = false
     }
 }
 
