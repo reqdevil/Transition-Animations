@@ -80,8 +80,6 @@
 		E6BE8EFC2225E9E30080F6E7 /* Transition Animations */ = {
 			isa = PBXGroup;
 			children = (
-				E6BE8F112225EAA10080F6E7 /* Model */,
-				E6BE8F102225EA9D0080F6E7 /* View */,
 				E6BE8F0F2225EA980080F6E7 /* Controller */,
 				E6BE8EFD2225E9E30080F6E7 /* AppDelegate.swift */,
 				E6BE8F012225E9E30080F6E7 /* Main.storyboard */,
@@ -99,20 +97,6 @@
 				E6540DBB2226A79900278873 /* SecondVC.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E6BE8F102225EA9D0080F6E7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		E6BE8F112225EAA10080F6E7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
