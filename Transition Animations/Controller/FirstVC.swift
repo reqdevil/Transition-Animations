@@ -19,7 +19,7 @@ class FirstVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hero.isEnabled = true
+        self.hero.isEnabled = true 
         
         blackView.hero.id = "blackView"
         blueView.hero.id = "blueView"
