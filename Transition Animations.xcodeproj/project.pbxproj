@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		74BBB941683449EC3B2B9708 /* Pods_Transition_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350BBFD4AE78274DA91A1166 /* Pods_Transition_Animations.framework */; };
+		E6105B9A22270B54004F1452 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6105B9922270B54004F1452 /* FirstVC.swift */; };
+		E6105B9C22270B69004F1452 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6105B9B22270B69004F1452 /* SecondVC.swift */; };
 		E6BE8EFE2225E9E30080F6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE8EFD2225E9E30080F6E7 /* AppDelegate.swift */; };
 		E6BE8F032225E9E30080F6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8F012225E9E30080F6E7 /* Main.storyboard */; };
 		E6BE8F052225E9E40080F6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8F042225E9E40080F6E7 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 		1BA1EF7A5708AE4D2A8436FA /* Pods-Transition Animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transition Animations.debug.xcconfig"; path = "Target Support Files/Pods-Transition Animations/Pods-Transition Animations.debug.xcconfig"; sourceTree = "<group>"; };
 		350BBFD4AE78274DA91A1166 /* Pods_Transition_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transition_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		484B2072975FCCC93902AAC0 /* Pods-Transition Animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transition Animations.release.xcconfig"; path = "Target Support Files/Pods-Transition Animations/Pods-Transition Animations.release.xcconfig"; sourceTree = "<group>"; };
+		E6105B9922270B54004F1452 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		E6105B9B22270B69004F1452 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		E6BE8EFA2225E9E30080F6E7 /* Transition Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transition Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BE8EFD2225E9E30080F6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6BE8F022225E9E30080F6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E6105B9822270B3A004F1452 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6105B9922270B54004F1452 /* FirstVC.swift */,
+				E6105B9B22270B69004F1452 /* SecondVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E6BE8EF12225E9E20080F6E7 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +89,7 @@
 		E6BE8EFC2225E9E30080F6E7 /* Transition Animations */ = {
 			isa = PBXGroup;
 			children = (
+				E6105B9822270B3A004F1452 /* Controller */,
 				E6BE8EFD2225E9E30080F6E7 /* AppDelegate.swift */,
 				E6BE8F012225E9E30080F6E7 /* Main.storyboard */,
 				E6BE8F042225E9E40080F6E7 /* Assets.xcassets */,
@@ -206,6 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6BE8EFE2225E9E30080F6E7 /* AppDelegate.swift in Sources */,
+				E6105B9C22270B69004F1452 /* SecondVC.swift in Sources */,
+				E6105B9A22270B54004F1452 /* FirstVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
