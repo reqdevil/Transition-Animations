@@ -30,6 +30,13 @@ class FirstVC: UIViewController {
             vc.selectedIndex = self.selectedIndex
         }
     }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
 }
 
 extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {

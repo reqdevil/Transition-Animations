@@ -18,12 +18,14 @@ class SecondVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hero.isEnabled = true
+        self.hero.modalAnimationType = .slide(direction: .down)
         
         committees = DataServices.instance.getCommitteesArray()
         
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.scrollToItem(at: selectedIndex!, at: .centeredHorizontally, animated: false)
+        collectionView.isScrollEnabled = false
     }
 }
 
@@ -37,7 +39,6 @@ extension SecondVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let committee = committees[indexPath.row]
             cell.updateViews(committee: committee)
             cell.hero.id = committee.title // Give necessary items id to make animation
-            print("Success")
             return cell
         }
         
